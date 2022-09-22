@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    overflow:hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -64,6 +63,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #page {
     display:none;
+    overflow:hidden;
 }
 @keyframes spinner {to {transform: rotate(1turn);}}
 #header {
@@ -196,6 +196,7 @@ ion-icon {
     top:0;
     left:0;
     transition: 400ms ease;
+    overflow:hidden;
 }
 
 
