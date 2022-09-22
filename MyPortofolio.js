@@ -105,7 +105,8 @@ mediaApp.forEach(mediaApp => {
 window.onscroll = function () {menuClose()} //inchide meniu cand dai scroll
 window.onload = function () {
     menuClose(), // inchide meniu cand dai refresh 
-    header() }
+    header(),
+    smoothSlide() }
 window.onresize = function () {header(), menuClose()};// inchide meniu daca schimbi dimensiunea pagini 
 
 
