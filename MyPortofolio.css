@@ -670,7 +670,8 @@ ion-icon {
 /*----------Responsive----------*/
 @media screen and (max-width:1100px) {
     .about-content-first, .about-content-second, .about-content-third {
-        scale: 0.8;
+        width:240px;
+        height:240px;
     }
     #about {
         height:500px;
@@ -713,14 +714,19 @@ ion-icon {
         transform: translate(15px,-50%);
     }
     .text-info {
-        scale:0.7;
-        top:50px;
+        width:280px;
+        height:80px;
+        top:60px;
+    }
+    .text-section {
+        font-size:32px;
+        line-height:32px;
     }
     .text-info-left {
         left:0px;
     }
     .text-info-right {
-        right:50px;
+        right:0px;
     }
     .white-space {
         height:100px;
@@ -735,7 +741,7 @@ ion-icon {
         top:10px;
     }
     #chart {
-        scale:0.7;
+        transform:scale(0.7);
     }
     #skills {
         height:350px;
@@ -762,13 +768,7 @@ ion-icon {
 }
 @media screen and (max-width:400px) {
     #chart {
-        scale:0.6;
-    }
-    .text-info {
-        scale:0.5;
-    }
-    .text-info-right {
-        right:0;
+        transform:scale(0.6);
     }
     #media-flexbox {
         scale:0.7;
