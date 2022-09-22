@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb:hover {
 ::selection {
     background-color: transparent;
 }
-#loading {
+#loadin {
     position: absolute;
     z-index:200;
     top:0;
@@ -348,7 +348,7 @@ ion-icon {
     background: var(--negru);
     box-shadow: 0 0 10px inset black;
 }
-.text-info {
+.text-inf {
     width:400px;
     height:100px;
     position:absolute;
