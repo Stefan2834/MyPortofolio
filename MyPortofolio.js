@@ -1,13 +1,13 @@
 var menu = document.getElementById("menu");
-var navBar = document.getElementById("navbar");
-var navIcons = document.querySelectorAll(".nav-icons");
-var line = document.getElementById("line");
-var topBar = document.querySelector(".top");
-var middleBar = document.querySelector(".middle");
-var bottomBar = document.querySelector(".bottom");
-var content = document.querySelector("#content");
-var bg = document.getElementById("bg-block");
-var Menu = false;
+navBar = document.getElementById("navbar");
+navIcons = document.querySelectorAll(".nav-icons");
+line = document.getElementById("line");
+topBar = document.querySelector(".top");
+middleBar = document.querySelector(".middle");
+bottomBar = document.querySelector(".bottom");
+content = document.querySelector("#content");
+bg = document.getElementById("bg-block");
+Menu = false;
 
 menu.addEventListener("click", menuSlide);
 
@@ -64,10 +64,50 @@ function header () {
         header.style.display = "inherit";
     }
 } //pornire sau oprire header bar daca esti pe telefon. 
-function pageTo () {
-    window.scrollTo(0, 0);
-} // scroll top = 0
-window.onscroll = function () {menuClose()}; //inchide meniu cand dai scroll
-window.onload = function () {menuClose(), header(), pageTop()};// inchide meniu cand dai refresh
-window.onresize = function () {header(), menuClose()};// inchide meniu daca schimbi dimensiunea pagini
+
+
+
+
+
+
+var mediaLine = document.querySelector(".media-line");
+instaApp = document.querySelector(".instaApp");
+twitterApp = document.querySelector(".twitterApp");
+whatsappApp = document.querySelector(".whatsappApp");
+youtubeApp = document.querySelector(".youtubeApp");
+facebookApp = document.querySelector(".facebookApp");
+mediaApp = document.querySelectorAll(".mediaApp");
+
+//coloreaza mediaLine cand cursorul este pe un mediaApp
+
+instaApp.addEventListener("mouseenter", () => {
+    mediaLine.style.background = "#dc2743"
+})
+twitterApp.addEventListener("mouseenter", () => {
+    mediaLine.style.background = "#00acee"
+})
+whatsappApp.addEventListener("mouseenter", () => {
+    mediaLine.style.background = "#25D366"
+}) 
+youtubeApp.addEventListener("mouseenter", () => {
+    mediaLine.style.background = "#ff0000"
+}) 
+facebookApp.addEventListener("mouseenter", () => {
+    mediaLine.style.background = "#4267b2"
+}) 
+mediaApp.forEach(mediaApp => {
+    mediaApp.addEventListener("mouseleave", () => {
+        mediaLine.style.background = "#ffffff";
+    })
+})
+
+
+window.onscroll = function () {menuClose()} //inchide meniu cand dai scroll
+window.onload = function () {
+    menuClose(), // inchide meniu cand dai refresh 
+    header(), 
+    smoothSlide()} // smooth slide cand dai refresh
+window.onresize = function () {header(), menuClose()};// inchide meniu daca schimbi dimensiunea pagini 
+
+
 
