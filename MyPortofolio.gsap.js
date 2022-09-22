@@ -23,27 +23,4 @@ right.forEach((right, i) => {
   });
 });
 
-const bottomSlide = gsap.utils.toArray('.bottomSlide');
-
-bottomSlide.forEach((bottomSlide, i) => {
-  const animBottom = gsap.fromTo(bottomSlide, {autoAlpha: 0, y: 50}, {duration: 1, autoAlpha: 1, y: 0});
-  ScrollTrigger.create({
-    trigger: bottomSlide,
-    animation: animBottom,
-    toggleActions: 'restart none restart restart',
-    once: false,
-  });
-});
-
-const stable = gsap.utils.toArray(".stableOp");
-
-stable.forEach((stable, i) => {
-  const animStable = gsap.fromTo(stable, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
-  ScrollTrigger.create({
-    trigger: stable,
-    animation: animStable,
-    toggleActions: 'restart none restart restart',
-    once: false,
-  });
-});
 }, 1000);
