@@ -691,6 +691,7 @@ ion-icon {
 @media screen and (max-width:970px) {
     #about-flex {
         flex-direction: column;
+        top:30px;
     }
     #about {
         height:1000px;
@@ -715,7 +716,7 @@ ion-icon {
     .text-info {
         width:280px;
         height:80px;
-        top:60px;
+        top:100px;
     }
     .text-section {
         font-size:32px;
