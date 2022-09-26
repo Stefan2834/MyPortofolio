@@ -33,7 +33,7 @@ var options = {
     ],
     labels: {
       style: {
-        fontSize: '14px',
+        fontSize: '13px',
         colors:'white',
         fontFamily:'Poppins',
         }

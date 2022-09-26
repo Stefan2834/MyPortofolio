@@ -452,8 +452,8 @@ ion-icon {
     color:white;
     background-color: transparent;
     background-size: 200px auto;
-    background-repeat: no-repeat;
     background-position: 50px 145px ;
+    background-repeat: no-repeat;
 }
 .about-content-first {
     background-image: url(image/first-undraw.svg);
@@ -560,7 +560,7 @@ ion-icon {
 /*----------ProjectPage----------*/
 
 #projects {
-    height:700px;
+    height:450px;
 }
 
 /*----------MediaPage----------*/
@@ -672,7 +672,24 @@ ion-icon {
 /*----------Responsive----------*/
 @media screen and (max-width:1100px) {
     .about-content-first, .about-content-second, .about-content-third {
-        scale:0.8;
+        width:240px;
+        height:240px;
+        background-size: 160px auto;
+        background-position: 40px 116px ;
+    }
+    .about-content-second {
+        background-size:120px auto ;
+        background-position: 60px 116px;
+    }
+    .top-left-corner, .top-right-corner, .bottom-left-corner, .bottom-right-corner {
+        width:56px;
+        height:56px;
+    }
+    .about-title {
+        font-size:24px;
+    }
+    .about-text {
+        font-size:16px;
     }
     #about {
         height:500px;
@@ -718,17 +735,17 @@ ion-icon {
     .text-info {
         width:280px;
         height:80px;
-        top:100px;
+        top:80px;
     }
     .text-section {
         font-size:32px;
         line-height:32px;
     }
     .text-info-left {
-        left:0px;
+        left:3px;
     }
     .text-info-right {
-        right:0px;
+        right:3px;
     }
     .white-space {
         height:100px;
@@ -743,7 +760,11 @@ ion-icon {
         top:10px;
     }
     #chart {
-        transform:scale(0.7);
+        width:385px;
+        height:280px;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
     }
     #skills {
         height:350px;
@@ -770,7 +791,8 @@ ion-icon {
 }
 @media screen and (max-width:400px) {
     #chart {
-        transform:scale(0.6);
+        width:350px;
+        height:300px;
     }
     #media-flexbox {
         scale:0.7;
