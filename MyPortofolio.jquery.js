@@ -16,10 +16,10 @@ $(document).ready(function() {
         })
         test.animate({left: "-100vw"}, 1500,)
     })
-*
+*/
 $(document).ready(function() {
     $("#page").fadeIn(2000);
     $("#loading").fadeOut(2000, function() {
         $("body").css("overflow-y", "scroll");
     });
-});   */
+}); 
