@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb:hover {
    position:absolute;
 }
 #page {
-    display:inherit;
+    display:none;
     overflow:hidden;
 }
 @keyframes spinner {to {transform: rotate(1turn);}}
