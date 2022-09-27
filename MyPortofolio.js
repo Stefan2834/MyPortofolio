@@ -67,6 +67,43 @@ function header () {
 
 
 
+window.onscroll = function () {menuClose()} //inchide meniu cand dai scroll
+window.onload = function () {
+    menuClose(), // inchide meniu cand dai refresh 
+    header() }
+window.onresize = function () {header(), menuClose()};// inchide meniu daca schimbi dimensiunea pagini 
+
+
+
+var aboutWhite = document.getElementById("about-page");
+skillsWhite = document.getElementById("skills-page");
+projectsWhite = document.getElementById("projects-page");
+mediaWhite = document.getElementById("media-page");
+contactWhite = document.getElementById("contact-page");
+
+
+window.addEventListener("scroll", function(ev) {
+    var indicator = document.getElementById("indicator");
+    var aboutDistance = aboutWhite.getBoundingClientRect().top;
+    var skillsDistance = skillsWhite.getBoundingClientRect().top;
+    var projectsDistance = projectsWhite.getBoundingClientRect().top;
+    var mediaDistance = mediaWhite.getBoundingClientRect().top;
+    var contactDistance = contactWhite.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+    if (aboutDistance > screenHeight /2 ) {
+        indicator.style.transform = "translateY(-125px)";
+    } else if (aboutDistance <= screenHeight / 2 && skillsDistance >= screenHeight / 2) {
+        indicator.style.transform = "translateY(-75px)";
+    } else if (skillsDistance <= screenHeight / 2 && projectsDistance >= screenHeight / 2) {
+        indicator.style.transform = "translateY(-25px)"
+    } else if (projectsDistance <= screenHeight / 2 && mediaDistance >= screenHeight / 2) {
+        indicator.style.transform = "translateY(25px)"
+    } else if (mediaDistance <= screenHeight / 2 && contactDistance >= screenHeight / 2) {
+        indicator.style.transform = "translateY(75px)"
+    } else if (contactDistance <= screenHeight / 2) {
+        indicator.style.transform = "translateY(125px)"
+    }
+}) //Indicator animation onScroll
 
 
 
@@ -100,13 +137,5 @@ mediaApp.forEach(mediaApp => {
         mediaLine.style.background = "#ffffff";
     })
 })
-
-
-window.onscroll = function () {menuClose()} //inchide meniu cand dai scroll
-window.onload = function () {
-    menuClose(), // inchide meniu cand dai refresh 
-    header() }
-window.onresize = function () {header(), menuClose()};// inchide meniu daca schimbi dimensiunea pagini 
-
 
 

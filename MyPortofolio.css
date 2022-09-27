@@ -8,7 +8,7 @@ html {
 }
 body {
     overflow-x:hidden;
-    overflow-y:hidden;
+    overflow-y:scroll;
     background-color: black;
 }
 :root {
@@ -42,6 +42,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--negru);
     width:100vw;
     height:100vh;
+    display:none;
 }
 #loading-center {
     top:50%;
@@ -61,7 +62,7 @@ body::-webkit-scrollbar-thumb:hover {
    animation: spinner 1s infinite linear;
    position:absolute;
 }
-#page {
+#pag {
     display:none;
     overflow:hidden;
 }
@@ -78,6 +79,14 @@ body::-webkit-scrollbar-thumb:hover {
     5.1px 4.8px 30.2px -14px rgba(0, 0, 0, 0.146),
     10.6px 10px 51.1px -14px rgba(0, 0, 0, 0.197),
     32px 30px 80px -14px rgba(0, 0, 0, 0.27);
+}
+#indicator {
+    width:3px;
+    height:50px;
+    background-color: var(--first);
+    position: absolute;
+    transform: translateY(-125px);
+    transition:400ms ease;
 }
 #navbar {
     width:0px;
@@ -113,7 +122,7 @@ a.nav-icons{
     overflow: hidden;
     transition: 400ms ease;
 }
-a.nav-icons:not(.question) {
+a.nav-icons {
     position: relative;
 }
 a.nav-icons:hover {
@@ -454,23 +463,22 @@ ion-icon {
     background-size: 200px auto;
     background-position: 50px 145px ;
     background-repeat: no-repeat;
-}
-.about-content-first {
-    background-image: url(image/first-undraw.svg);
-}
-.about-content-second {
-    background-image: url(image/favicon-undraw.svg);
-    background-size: 150px auto;
-    background-position: 75px 145px;
-}
-.about-content-third {
-    background-image: url(image/second-undraw.svg);
+    text-align: center;
 }
 .about-content-first:hover, .about-content-second:hover, .about-content-third:hover {
-    background-color: #3de1d4;
-    box-shadow:none;
-    color:var(--negru);
     box-shadow: 0 0 7px black;
+    background-color: #151515;
+}
+.about-icon {
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    width:120px;
+    height:100px;
+    bottom:50px;
+}
+#font-js, #font-react, #font-html {
+    font-size: 100px;
 }
 .about-content-first:hover .corner-one, .about-content-second:hover .corner-two, .about-content-third:hover .corner-three{
     transform: scale(1);
@@ -487,8 +495,8 @@ ion-icon {
     height:70px;
     top:-6px;
     left:-6px;
-    border-top:7px solid white;
-    border-left:7px solid white;
+    border-top:7px solid var(--first);
+    border-left:7px solid var(--first);
 }
 .top-right-corner {
     position:absolute;
@@ -496,8 +504,8 @@ ion-icon {
     height:70px;
     top:-6px;
     right:-6px;
-    border-top:7px solid white;
-    border-right:7px solid white;
+    border-top:7px solid var(--first);
+    border-right:7px solid var(--first);
 }
 .bottom-left-corner {
     position:absolute;
@@ -505,8 +513,8 @@ ion-icon {
     height:70px;
     bottom:-6px;
     left:-6px;
-    border-bottom:7px solid white;
-    border-left:7px solid white
+    border-bottom:7px solid var(--first);
+    border-left:7px solid var(--first)
 }
 .bottom-right-corner {
     position:absolute;
@@ -514,8 +522,8 @@ ion-icon {
     height:70px;
     bottom:-6px;
     right:-6px;
-    border-bottom:7px solid white;
-    border-right:7px solid white;
+    border-bottom:7px solid var(--first);
+    border-right:7px solid var(--first);
 }
 .about-title {
     font-family: 'Public Sans', sans-serif;
@@ -533,6 +541,7 @@ ion-icon {
     font-weight: 500;
     transition: 400ms ease;
     cursor: default;
+    color:#a2b0b0;
 }
 .about-title::selection, .about-text::selection{
     background-color: transparent;
@@ -553,7 +562,7 @@ ion-icon {
 #chart {
     width:550px;
     height:500px;
-    position: relative;
+    position: absolute;
     top:0;
 }
 
@@ -674,12 +683,12 @@ ion-icon {
     .about-content-first, .about-content-second, .about-content-third {
         width:240px;
         height:240px;
-        background-size: 160px auto;
-        background-position: 40px 116px ;
     }
-    .about-content-second {
-        background-size:120px auto ;
-        background-position: 60px 116px;
+    .about-icon {
+        bottom:20px;
+    }
+    #font-js, #font-html, #font-react {
+        font-size: 80px;
     }
     .top-left-corner, .top-right-corner, .bottom-left-corner, .bottom-right-corner {
         width:56px;

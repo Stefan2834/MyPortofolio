@@ -56,6 +56,16 @@ var options = {
   },
 }
 var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
+var counter = 0;
 
+window.addEventListener('scroll', function(ev) {
+
+  var chartApex = document.getElementById('chart');
+  var distanceToTop = chartApex.getBoundingClientRect().top;
+  var inaltime = window.innerHeight;
+  if (distanceToTop <= inaltime / 2 && counter == 0) {
+      chart.render();
+      counter = 1;
+  } 
+});
 
