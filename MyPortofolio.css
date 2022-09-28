@@ -365,6 +365,7 @@ ion-icon {
     top:100px;
     z-index:2;
     background: var(--gradient);
+    box-shadow: 0 0 4px black, 0 0 7px black;
 }
 .text-info-left {
     left:170px;
@@ -651,10 +652,52 @@ ion-icon {
 /*----------ContactPage----------*/
 
 #contact {
-    height:250px;
+    height:350px;
+}
+#contact-flex {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width:600px;
+    height:600px;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#contact-email, #contact-phone {
+    width:250px;
+    height:150px;
+    background-color: var(--negru);
+    box-shadow: 0 0 3px black, 0 0 6px black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color:white;
+    padding:20px 0;
+    cursor:default;
+}
+#email-icon, #contact-icon {
+    color:var(--first);
+    position: relative;
+    transition: 500ms ease;
+}
+.email-text, .contact-text {
+    font-size:20px;
+    position: relative;
+}
+.email, .contact {
+    font-size:16px;
+    position: relative;
+    bottom:-10px;
+    color:white;
+}
+#contact-email:hover #email-icon, #contact-phone:hover #contact-icon{
+    transform:rotate(360deg);
 }
 
-
+/*----------Footer----------*/
 
 #footer {
     width:100vw;
@@ -789,6 +832,14 @@ ion-icon {
     }
     .number-right {
         right:20px;
+    }
+    #contact {
+        height:600px;
+    }
+    #contact-flex {
+        flex-direction: column;
+        width:300px;
+        height:500px;
     }
 }
 @media screen and (max-width:500px) {

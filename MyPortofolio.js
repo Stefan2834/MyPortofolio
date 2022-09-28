@@ -70,7 +70,6 @@ function scrollTop() {
 }
 
 
-
 window.onscroll = function () {menuClose()} //inchide meniu cand dai scroll
 window.onload = function () {
     menuClose(), // inchide meniu cand dai refresh 
