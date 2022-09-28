@@ -724,12 +724,6 @@ ion-icon {
     #about {
         height:1000px;
     }
-    .text-info-left {
-        left:50px;
-    }
-    .text-info-right {
-        right:50px;
-    }
 }
 @media screen and (max-width:700px) {
     #cv-download:before, #cv-download:after {
@@ -745,16 +739,6 @@ ion-icon {
         width:280px;
         height:80px;
         top:80px;
-    }
-    .text-section {
-        font-size:32px;
-        line-height:32px;
-    }
-    .text-info-left {
-        left:5px;
-    }
-    .text-info-right {
-        right:5px;
     }
     .white-space {
         height:100px;

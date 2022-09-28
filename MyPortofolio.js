@@ -90,7 +90,7 @@ window.addEventListener("scroll", function(ev) {
     var mediaDistance = mediaWhite.getBoundingClientRect().top;
     var contactDistance = contactWhite.getBoundingClientRect().top;
     var screenHeight = window.innerHeight;
-    if (aboutDistance > screenHeight /2 ) {
+    if (aboutDistance > screenHeight / 2 ) {
         indicator.style.transform = "translateY(-125px)";
     } else if (aboutDistance <= screenHeight / 2 && skillsDistance >= screenHeight / 2) {
         indicator.style.transform = "translateY(-75px)";
