@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #page {
     overflow:hidden;
-    display:none
+    display:none;
 }
 @keyframes spinner {to {transform: rotate(1turn);}}
 #header {
@@ -204,7 +204,6 @@ ion-icon {
     top:0;
     left:0;
     transition: 400ms ease;
-    overflow:hidden;
 }
 
 
@@ -677,7 +676,7 @@ ion-icon {
 
 
 
-/*----------Responsive----------*
+/*----------Responsive----------*/
 @media screen and (max-width:1100px) {
     .about-content-first, .about-content-second, .about-content-third {
         width:240px;
@@ -807,4 +806,4 @@ ion-icon {
         left:35%;
         top:45%;
     }
-} */
+} 
