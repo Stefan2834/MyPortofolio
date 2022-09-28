@@ -204,6 +204,7 @@ ion-icon {
     top:0;
     left:0;
     transition: 400ms ease;
+    overflow:hidden;
 }
 
 
