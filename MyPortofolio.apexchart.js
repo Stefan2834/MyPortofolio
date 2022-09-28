@@ -63,7 +63,7 @@ window.addEventListener('scroll', function(ev) {
   var chartApex = document.getElementById('chart');
   var distanceToTop = chartApex.getBoundingClientRect().top;
   var inaltime = window.innerHeight;
-  if (distanceToTop <= inaltime / 2 && counter == 0) {
+  if (distanceToTop <= inaltime - 200 && counter == 0) {
       chart.render();
       counter = 1;
   } 
