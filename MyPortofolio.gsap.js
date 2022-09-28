@@ -6,7 +6,7 @@ left.forEach((left, i) => {
   ScrollTrigger.create({
     trigger: left,
     animation: animLeft,
-    toggleActions: 'restart restart restart restart',
+    toggleActions: 'play none none none',
     once: false,
   });
 });
@@ -18,7 +18,7 @@ right.forEach((right, i) => {
   ScrollTrigger.create({
     trigger: right,
     animation: animRight,
-    toggleActions: 'restart restart restart restart',
+    toggleActions: 'play none none none',
     once: false,
   });
 });
@@ -30,7 +30,7 @@ bottomSlide.forEach((bottomSlide, i) => {
   ScrollTrigger.create({
     trigger: bottomSlide,
     animation: animBottomSlide,
-    toggleActions: 'restart restart restart restart',
+    toggleActions: 'play none none none',
     once: false,
   });
 });

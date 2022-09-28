@@ -63,14 +63,19 @@ function header () {
     } else {
         header.style.display = "inherit";
     }
-} //pornire sau oprire header bar daca esti pe telefon. 
+} //pornire sau oprire header bar daca esti pe telefon.
+
+function scrollTop() {
+    window.scrollTop = 0;
+}
 
 
 
 window.onscroll = function () {menuClose()} //inchide meniu cand dai scroll
 window.onload = function () {
     menuClose(), // inchide meniu cand dai refresh 
-    header() }
+    header(),
+    scrollTop() } //seteaza scrollTop = 0
 window.onresize = function () {header(), menuClose()};// inchide meniu daca schimbi dimensiunea pagini 
 
 
