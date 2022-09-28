@@ -87,7 +87,7 @@ mediaWhite = document.getElementById("media-page");
 contactWhite = document.getElementById("contact-page");
 
 
-window.addEventListener("scroll", function(ev) {
+window.addEventListener("scroll", function(e) {
     var indicator = document.getElementById("indicator");
     var aboutDistance = aboutWhite.getBoundingClientRect().top;
     var skillsDistance = skillsWhite.getBoundingClientRect().top;
