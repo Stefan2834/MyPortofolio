@@ -1,4 +1,4 @@
-
+setTimeout( function smoothSlide () {
 const left = gsap.utils.toArray('.left');
 
 left.forEach((left, i) => {
@@ -22,3 +22,5 @@ right.forEach((right, i) => {
     once: false,
   });
 });
+
+}, 2000)
