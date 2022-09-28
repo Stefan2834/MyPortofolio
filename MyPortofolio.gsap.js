@@ -23,4 +23,16 @@ right.forEach((right, i) => {
   });
 });
 
+const bottomSlide = gsap.utils.toArray('.bottomSlide');
+
+bottomSlide.forEach((bottomSlide, i) => {
+  const animBottomSlide = gsap.fromTo(bottomSlide, {autoAlpha: 0, y: 100}, {duration: 1, autoAlpha: 1, y: 0});
+  ScrollTrigger.create({
+    trigger: bottomSlide,
+    animation: animBottomSlide,
+    toggleActions: 'restart restart restart restart',
+    once: false,
+  });
+});
+
 }, 2000)

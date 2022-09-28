@@ -456,7 +456,6 @@ ion-icon {
     width:300px;
     height:300px;
     position: relative;
-    transition: 400ms ease;
     color:white;
     background-color: transparent;
     background-size: 200px auto;
