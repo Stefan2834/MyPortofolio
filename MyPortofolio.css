@@ -8,7 +8,7 @@ html {
 }
 body {
     overflow-x:hidden;
-    overflow-y:scroll;
+    overflow-y:hidden;
     background-color: black;
 }
 :root {
@@ -42,7 +42,6 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--negru);
     width:100vw;
     height:100vh;
-    display: none;
 }
 #loading-center {
     top:50%;
@@ -64,7 +63,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #page {
     overflow:hidden;
-    display:inherit;
+    display:none
 }
 @keyframes spinner {to {transform: rotate(1turn);}}
 #header {
@@ -678,7 +677,7 @@ ion-icon {
 
 
 
-/*----------Responsive----------*/
+/*----------Responsive----------*
 @media screen and (max-width:1100px) {
     .about-content-first, .about-content-second, .about-content-third {
         width:240px;
@@ -724,6 +723,12 @@ ion-icon {
     #about {
         height:1000px;
     }
+    .text-info-left {
+        left:50px;
+    }
+    .text-info-right {
+        right:50px;
+    }
 }
 @media screen and (max-width:700px) {
     #cv-download:before, #cv-download:after {
@@ -734,6 +739,21 @@ ion-icon {
     }
     #cv-download:after {
         transform: translate(15px,-50%);
+    }
+    .text-info {
+        width:280px;
+        height:80px;
+        top:80px;
+    }
+    .text-section {
+        font-size:32px;
+        line-height:32px;
+    }
+    .text-info-left {
+        left:5px;
+    }
+    .text-info-right {
+        right:5px;
     }
     .white-space {
         height:100px;
@@ -787,4 +807,4 @@ ion-icon {
         left:35%;
         top:45%;
     }
-}
+} */
