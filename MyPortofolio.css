@@ -735,11 +735,6 @@ ion-icon {
     #cv-download:after {
         transform: translate(15px,-50%);
     }
-    .text-info {
-        width:280px;
-        height:80px;
-        top:80px;
-    }
     .white-space {
         height:100px;
     }
