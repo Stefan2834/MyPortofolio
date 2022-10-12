@@ -143,3 +143,11 @@ mediaApp.forEach(mediaApp => {
 })
 
 
+
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("text-im").innerHTML = myObj.number;
+}
+xmlhttp.open("GET", "test.txt");
+xmlhttp.send();
