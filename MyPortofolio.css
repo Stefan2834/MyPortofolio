@@ -8,7 +8,7 @@ html {
 }
 body {
     overflow-x:hidden;
-    overflow-y:hidden;
+    overflow-y:scroll;
     background-color: black;
 }
 :root {
@@ -188,6 +188,25 @@ ion-icon {
     width:40px;
     left:15px;
 }
+#btn-top {
+    position: fixed;
+    bottom:-60px;
+    right:40px;
+    background-color: var(--first);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    z-index:4;
+    font-size:50px;
+    padding-top: 7px;
+    text-align: center;
+    cursor:pointer;
+    transition: 400ms ease;
+    box-shadow: 4px 4px 7px black;
+}
+#btn-top-icon {
+    color:black;
+}
 
 
 
@@ -216,17 +235,23 @@ ion-icon {
 #main {
     position:relative;
     text-align:center;
-    background-image: url(image/main-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height:100vh;
-    max-height: 800px;
+    max-height: 1000px;
     min-height:500px;
     width:100vw;
-    background-color:rgba(0, 0, 0, 0.1);
-    background-blend-mode: darken;
+    background-color:rgba(44,44,84,1);
     overflow: hidden;
+}
+#main-bg {
+    background-image: url(image/codesnap.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    transform: rotate(-25deg);
+    opacity: 0.4;
 }
 #text-write {
     width:600px;
@@ -570,6 +595,29 @@ ion-icon {
 #projects {
     height:450px;
 }
+#projects-404 {
+    width:300px;
+    height:250px;
+    background-image: url(image/404-undraw.svg);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    background-color: var(--negru);
+    background-position: center bottom;
+    color:white;
+    text-align: center;
+    font-size:15px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 3px 3px 7px black;
+}
+#projects-404:hover {
+    background-color:transparent ;
+    box-shadow: none;
+}
 
 /*----------MediaPage----------*/
 
@@ -644,7 +692,7 @@ ion-icon {
     transform: translate(-50%);
     transition-delay: 0;
 }
-.instaApp:hover .instaText, .twitterApp:hover .twitterText, .whatsappApp:hover .whatsappText, .youtubeApp:hover .youtubeText, .facebookApp:hover .facebookText {
+.instaApp:hover .instaText, .twitterApp:hover .twitterText, .discordApp:hover .discordText, .youtubeApp:hover .youtubeText, .facebookApp:hover .facebookText {
     visibility:visible;
     transition-delay: 300ms;
 }
@@ -701,10 +749,21 @@ ion-icon {
 
 #footer {
     width:100vw;
-    height:400px;
+    height:50px;
     background-color: var(--negru);
     position: relative;
     box-shadow: 0 0 10px inset black;
+}
+#footer-copy {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    font-size:15px;
+    line-height:25px;
+    font-family: 'Public Sans', sans-serif;
+    opacity:0.6;
 }
 
 

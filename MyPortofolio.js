@@ -69,8 +69,11 @@ function scrollTop() {
     window.scrollTop = 0;
 }
 
+navIcons.forEach(navIcons => {
+    navIcons.addEventListener("click", menuClose)
+})
 
-window.onscroll = function () {menuClose()} //inchide meniu cand dai scroll
+window.onscroll = function () {menuClose(), btnTop()} //inchide meniu cand dai scroll
 window.onload = function () {
     menuClose(), // inchide meniu cand dai refresh 
     header(),
@@ -78,6 +81,14 @@ window.onload = function () {
 window.onresize = function () {header(), menuClose()};// inchide meniu daca schimbi dimensiunea pagini 
 
 
+function btnTop() {
+    var btnTop = document.getElementById("btn-top")
+    if(window.scrollY > 100) {
+        btnTop.style.bottom = '30px';
+    } else {
+        btnTop.style.bottom = '-60px';
+    }
+}
 
 var aboutWhite = document.getElementById("about-page");
 skillsWhite = document.getElementById("skills-page");
@@ -114,7 +125,7 @@ window.addEventListener("scroll", function(e) {
 var mediaLine = document.querySelector(".media-line");
 instaApp = document.querySelector(".instaApp");
 twitterApp = document.querySelector(".twitterApp");
-whatsappApp = document.querySelector(".whatsappApp");
+discordApp = document.querySelector(".discordApp");
 youtubeApp = document.querySelector(".youtubeApp");
 facebookApp = document.querySelector(".facebookApp");
 mediaApp = document.querySelectorAll(".mediaApp");
@@ -127,8 +138,8 @@ instaApp.addEventListener("mouseenter", () => {
 twitterApp.addEventListener("mouseenter", () => {
     mediaLine.style.background = "#00acee"
 })
-whatsappApp.addEventListener("mouseenter", () => {
-    mediaLine.style.background = "#25D366"
+discordApp.addEventListener("mouseenter", () => {
+    mediaLine.style.background = "#5865F2"
 }) 
 youtubeApp.addEventListener("mouseenter", () => {
     mediaLine.style.background = "#ff0000"
@@ -141,5 +152,7 @@ mediaApp.forEach(mediaApp => {
         mediaLine.style.background = "#ffffff";
     })
 })
+
+
 
 

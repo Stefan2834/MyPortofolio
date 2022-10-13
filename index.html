@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-          <title>MyPortofolio</title>
-        <link rel="stylesheet" type="text/css" href="MyPortofolio.css">
-        <script src="MyPortofolio.js" defer></script>
-        <link rel="icon" type="image/x-icon" href="image/favicon-undraw.svg">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&family=Secular+One&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>MyPortofolio</title>
+  <link rel="stylesheet" type="text/css" href="MyPortofolio.css">
+  <script src="MyPortofolio.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="image/favicon-undraw.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&family=Secular+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-
-
-<div id="loading">
-  <div id="loading-center">
-    <div id="loading-spinner"></div>
-  </div>
-</div>
-
-
-<div id="page">
-
-
-  <div id="menu">
-    <div class="bar top"></div>
-    <div class="bar middle"></div>
-    <div class="bar bottom"></div>
-  </div>
-  <div id="navbar">
-    <div id="line"></div>
-    <a class="nav-icons" href="#main"><div class="navtext"><ion-icon name="home-outline"></ion-icon>Home</div></a>
-    <a class="nav-icons" href="#about-white"><div class="navtext"><ion-icon name="person-outline"></ion-icon>About</div></a>
-    <a class="nav-icons" href="#skills-white"><div class="navtext"><ion-icon name="analytics-outline"></ion-icon>Skills</div></a>
-    <a class="nav-icons" href="#projects-white"><div class="navtext"><ion-icon name="list-outline"></ion-icon>Projects</div></a>
-    <a class="nav-icons" href="#media-white"><div class="navtext"><ion-icon name="chatbubbles-outline"></ion-icon>Media</div></a>
-    <a class="nav-icons" href="#contact-white"><div class="navtext"><ion-icon name="call-outline"></ion-icon>Contact</div></a>
-    <div id="indicator"></div>
-  </div>
-  <div id="header"></div>
-  
-<div id="content">
-  <div id="bg-block"></div>
-  <div id="main">
-    <div id="text-write">
-      <span id="text-im">I'm </span><span id="auto-write"></span>
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-spinner"></div>
     </div>
-    <div class="main-button-flex">
-      <div class="main-button-about"><a href="#about-page">AboutMe</a></div>
-      <div class="main-button-contact"><a href="#contact-page">ContactMe</a></div>
-    </div>
-    <div id="cv-download">DownloadCv<ion-icon class="download-icon" name="cloud-download-outline"></ion-icon></div>
-
-
   </div>
 
+  <div id="page">
+    <div id="menu">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
+    <div id="navbar">
+      <div id="line"></div>
+      <a class="nav-icons" href="#main">
+        <div class="navtext">
+          <ion-icon name="home-outline"></ion-icon>Home
+        </div>
+      </a>
+      <a class="nav-icons" href="#about-white">
+        <div class="navtext">
+          <ion-icon name="person-outline"></ion-icon>About
+        </div>
+      </a>
+      <a class="nav-icons" href="#skills-white">
+        <div class="navtext">
+          <ion-icon name="analytics-outline"></ion-icon>Skills
+        </div>
+      </a>
+      <a class="nav-icons" href="#projects-white">
+        <div class="navtext">
+          <ion-icon name="list-outline"></ion-icon>Projects
+        </div>
+      </a>
+      <a class="nav-icons" href="#media-white">
+        <div class="navtext">
+          <ion-icon name="chatbubbles-outline"></ion-icon>Media
+        </div>
+      </a>
+      <a class="nav-icons" href="#contact-white">
+        <div class="navtext">
+          <ion-icon name="call-outline"></ion-icon>Contact
+        </div>
+      </a>
+      <div id="indicator"></div>
+    </div>
+    <div id="header"></div>
 
+    <div id="content">
+      <div id="btn-top">
+        <a href="#main">
+          <ion-icon id="btn-top-icon" name="chevron-up-outline"></ion-icon>
+        </a>
+      </div>
+      <div id="bg-block"></div>
+      <div id="main">
+        <div id="main-bg"></div>
+        <div id="text-write">
+          <span id="text-im">I'm </span><span id="auto-write"></span>
+        </div>
+        <div class="main-button-flex">
+          <div class="main-button-about"><a href="#about-page">AboutMe</a></div>
+          <div class="main-button-contact"><a href="#contact-page">ContactMe</a></div>
+        </div>
+        <div id="cv-download">DownloadCv<ion-icon class="download-icon" name="cloud-download-outline"></ion-icon>
+        </div>
+      </div>
 
       <div class="white-space" id="about-white">
         <div id="about-page" class="text-info text-info-left left">
@@ -72,30 +93,36 @@
         <div class="number-line"></div>
       </div>
       <div id="about">
-
         <div id="about-flex">
           <div class="about-content-first bottomSlide">
             <div class="about-title">What can I do</div>
             <div class="about-text">I can make webpages using Html, Css, JavaScript and I'm still learning.<br></div>
             <div class="about-icon"><i id="font-js" class="fa-brands fa-js" style="color:yellow"></i></div>
-            <div class="top-left-corner corner-one"></div><div class="top-right-corner corner-one"></div><div class="bottom-left-corner corner-one"></div><div class="bottom-right-corner corner-one"></div>
+            <div class="top-left-corner corner-one"></div>
+            <div class="top-right-corner corner-one"></div>
+            <div class="bottom-left-corner corner-one"></div>
+            <div class="bottom-right-corner corner-one"></div>
           </div>
           <div class="about-content-second bottomSlide">
             <div class="about-title">About Me</div>
             <div class="about-text">I'm Stefan, I am 16 years old and I like to make webpages.</div>
             <div class="about-icon"><i id="font-html" class="fa-brands fa-html5" style="color:#e34c26"></i></div>
-            <div class="top-left-corner corner-two"></div><div class="top-right-corner corner-two"></div><div class="bottom-left-corner corner-two"></div><div class="bottom-right-corner  corner-two"></div>
+            <div class="top-left-corner corner-two"></div>
+            <div class="top-right-corner corner-two"></div>
+            <div class="bottom-left-corner corner-two"></div>
+            <div class="bottom-right-corner  corner-two"></div>
           </div>
           <div class="about-content-third bottomSlide">
             <div class="about-title">My Goal</div>
             <div class="about-text">My goal is to make the best webpage you've ever seen.</div>
             <div class="about-icon"><i id="font-react" class="fa-brands fa-react" style="color:#61dbfb"></i></div>
-            <div class="top-left-corner corner-three"></div><div class="top-right-corner corner-three"></div><div class="bottom-left-corner corner-three"></div><div class="bottom-right-corner corner-three"></div>
+            <div class="top-left-corner corner-three"></div>
+            <div class="top-right-corner corner-three"></div>
+            <div class="bottom-left-corner corner-three"></div>
+            <div class="bottom-right-corner corner-three"></div>
           </div>
         </div>
       </div>
-
-
 
       <div class="white-space" id="skills-white">
         <div id="skills-page" class="text-info text-info-right right">
@@ -110,8 +137,6 @@
         </div>
       </div>
 
-
-
       <div class="white-space" id="projects-white">
         <div id="projects-page" class="text-info text-info-left left">
           <div class="text-section">My Projects</div>
@@ -119,9 +144,9 @@
         <div class="number number-right">03</div>
         <div class="number-line"></div>
       </div>
-      <div id="projects"></div>
-
-
+      <div id="projects">
+        <div id="projects-404" class="bottomSlide">Nothing here! Please come back later</div>
+      </div>
 
       <div class="white-space" id="media-white">
         <div id="media-page" class="text-info text-info-right right">
@@ -131,29 +156,31 @@
         <div class="number-line"></div>
       </div>
       <div id="media">
-
-
         <div id="media-flexbox">
+          <div class="mediaApp discordApp">
+            <div class="appText discordText" style="color:#5865F2">Discord</div>
+            <a href="https://discord.com/channels/@me" style="color:#5865F2"><i class="fa-brands fa-discord"></i></a>
+          </div>
           <div class="mediaApp instaApp">
             <div class="appText instaText" style="color:#dc2743">Instagram</div>
             <a href="https://www.instagram.com/stefaniosif17/"><i class="fa-brands fa-instagram"></i></a>
           </div>
           <div class="mediaApp twitterApp">
             <div class="appText twitterText" style="color:#00acee">Twitter</div>
-            <a href="https://twitter.com/Stefan2834" style="color:#00acee"><i class="fa-brands fa-twitter"></i></a></div>
-          <div class="mediaApp whatsappApp">
-            <div class="appText whatsappText" style="color:#25D366">WhatsApp</div>
-            <a href="https://web.whatsapp.com/" style="color:#25D366"><i class="fa-brands fa-whatsapp"></i></a></div>
+            <a href="https://twitter.com/Stefan2834" style="color:#00acee"><i class="fa-brands fa-twitter"></i></a>
+          </div>
           <div class="mediaApp youtubeApp">
             <div class="appText youtubeText" style="color:#ff0000">YouTube</div>
-            <a href="https://www.youtube.com/channel/UCAV4P3xhYwZ_4gDFXyc5JMg" style="color:#ff0000"><i class="fa-brands fa-youtube"></i></a></div>
+            <a href="https://www.youtube.com/channel/UCAV4P3xhYwZ_4gDFXyc5JMg" style="color:#ff0000"><i
+                class="fa-brands fa-youtube"></i></a>
+          </div>
           <div class="mediaApp facebookApp">
             <div class="appText facebookText" style="color:#4267B2">Facebook</div>
-            <a href="https://www.facebook.com/" style="color:#4267B2"><i class="fa-brands fa-facebook"></i></a></div>
+            <a href="https://www.facebook.com/" style="color:#4267B2"><i class="fa-brands fa-facebook"></i></a>
+          </div>
         </div>
         <div class="media-line"></div>
       </div>
-
 
       <div class="white-space" id="contact-white">
         <div id="contact-page" class="text-info text-info-left left">
@@ -167,7 +194,7 @@
           <div id="contact-email" class="bottomSlide">
             <ion-icon id="email-icon" name="mail-outline"></ion-icon>
             <div class="email-text">Send me an email</div>
-            <div class="email">@iosifs617@gmail.com</div>
+            <div class="email">@stefaniosif220@gmail.com</div>
           </div>
           <div id="contact-phone" class="bottomSlide">
             <ion-icon name="call-outline" id="contact-icon"></ion-icon>
@@ -176,40 +203,44 @@
           </div>
         </div>
       </div>
-      <div id="footer"></div>
-</div>
-</div>
+      <div id="footer">
+        <div id="footer-copy">Copyright &#169 2022 All Rights Reserved</div>
+      </div>
+    </div>
+  </div>
 
 
 
 
-<!---------- Jquery.js ---------->
+  <!---------- Jquery.js ---------->
 
-<script src="MyPortofolio.jquery.js"></script>
+  <script src="MyPortofolio.jquery.js"></script>
 
-<!---------- ApexChart.js ---------->
+  <!---------- ApexChart.js ---------->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js" integrity="sha512-K5BohS7O5E+S/W8Vjx4TIfTZfxe9qFoRXlOXEAWJD7MmOXhvsSl2hJihqc0O8tlIfcjrIkQXiBjixV8jgon9Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="MyPortofolio.apexchart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"
+    integrity="sha512-K5BohS7O5E+S/W8Vjx4TIfTZfxe9qFoRXlOXEAWJD7MmOXhvsSl2hJihqc0O8tlIfcjrIkQXiBjixV8jgon9Uw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="MyPortofolio.apexchart.js"></script>
 
-<!---------- Typer.js ---------->
+  <!---------- Typer.js ---------->
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  
-  var typed = new Typed("#auto-write", {
-    strings: ["Stefan", "Web Developer", "Programer"],
-    typeSpeed: 150,
-    backSpeed: 150,
-    loop: true,
-  }) 
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#auto-write", {
+      strings: ["Stefan", "Web Developer", "Programer"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    })
+  </script>
 
-<!---------- Gsap.js ---------->
+  <!---------- Gsap.js ---------->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-<script src="MyPortofolio.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+  <script src="MyPortofolio.gsap.js"></script>
 
 </body>
+
 </html>
