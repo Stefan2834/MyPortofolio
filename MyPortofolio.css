@@ -61,6 +61,7 @@ body {
     left:0;
     background-color: var(--negru);
     z-index:10;
+    display:none;
     box-shadow:2.3px 2.1px 13.2px -14px rgba(0, 0, 0, 0.093),
     5.1px 4.8px 30.2px -14px rgba(0, 0, 0, 0.146),
     10.6px 10px 51.1px -14px rgba(0, 0, 0, 0.197),
@@ -190,6 +191,7 @@ ion-icon {
     cursor:pointer;
     transition: 400ms ease;
     box-shadow: 4px 4px 7px black;
+    display:none;
 }
 #btn-top-icon {
     color:black;
@@ -234,10 +236,12 @@ ion-icon {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 500px;
-    width:100vw;
-    height:100vh;
+    width:500px;
+    height:400px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-25deg);
     position: absolute;
-    transform: rotate(-25deg);
     opacity: 0.4;
 }
 #text-write {
@@ -736,7 +740,7 @@ ion-icon {
 
 #footer {
     width:100vw;
-    height:50px;
+    height:150px;
     background-color: var(--negru);
     position: relative;
     box-shadow: 0 0 10px inset black;
@@ -744,13 +748,14 @@ ion-icon {
 #footer-copy {
     position: absolute;
     left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top:50px;
+    transform: translate(-50%);
     color:white;
-    font-size:15px;
+    font-size:20px;
     line-height:25px;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     opacity:0.6;
+    text-align: center;
 }
 
 
@@ -795,6 +800,9 @@ ion-icon {
     .number-line {
         width:calc(100vw - 60px);
         left:30px;
+    }
+    #header {
+        display:inherit;
     }
 }
 @media screen and (max-width:950px) {
@@ -904,3 +912,8 @@ ion-icon {
         top:45%;
     }
 } 
+@media screen and (max-height:550px) {
+    #navbar {
+        justify-content: flex-end;
+    }
+}

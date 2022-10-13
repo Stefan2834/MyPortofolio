@@ -86,7 +86,7 @@ function btnTop() {
     if(window.scrollY > 100) {
         btnTop.style.bottom = '30px';
     } else {
-        btnTop.style.bottom = '-60px';
+        btnTop.style.bottom = '-40px';
     }
 }
 
