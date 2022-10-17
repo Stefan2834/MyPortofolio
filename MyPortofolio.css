@@ -34,9 +34,24 @@ body {
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    position: relative;
+    position: absolute;
     width:100px;
     height:100px;
+}
+#svgGroup {
+    position: absolute;
+    width:340px;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    height:57px;
+}
+#svg {
+    width:380px;
+    height:60px;
+    position: absolute;
+    left:50%;
+    top:-100px;
+    transform: translate(-50%);
 }
 #loading-spinner {
    width: 100px;
