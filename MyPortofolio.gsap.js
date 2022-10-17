@@ -35,4 +35,4 @@ bottomSlide.forEach((bottomSlide, i) => {
   });
 });
 
-}, 2000)
+}, 3000)
