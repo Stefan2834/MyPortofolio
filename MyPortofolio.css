@@ -926,6 +926,9 @@ ion-icon {
         left:35%;
         top:45%;
     }
+    #svg {
+        transform: translate(-50%,-50%) scale(0.8);
+    }
 } 
 @media screen and (max-height:550px) {
     #navbar {
