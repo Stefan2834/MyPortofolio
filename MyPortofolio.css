@@ -654,18 +654,31 @@ ion-icon {
     text-align: center;
     z-index:1;
 }
+.mediaApp a {
+    color:white;
+}
 .mediaApp:hover {
     flex-grow: 0.1;
     height:70px;
     font-size:60px;
+    transition: 400ms ease;
 } 
-.mediaApp a {
-    color:white;
+.discordApp a:hover {
+    color:#5865F2;
 }
-.instaApp {
-    border-radius: 10px;
+.instaApp:hover {
+    color:white;
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.twitterApp a:hover{
+    color: #00acee;
+}
+.youtubeApp a:hover {
+    color:#ff0000;
+}
+.facebookApp a:hover {
+    color:#4267b2;
 }
 .fa-brands {
     transform: translateY(3px);
