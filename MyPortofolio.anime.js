@@ -8,6 +8,5 @@ $(document).ready(function() {
         direction: 'alternate',
         loop: false,
     },)
-    
 })
 
